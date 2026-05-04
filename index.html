@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kubekiwoda | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+<div id="trail-container"></div>
+
+<div class="orb-wrapper orb-1-wrapper" data-speed="0.02"><div class="gradient-orb orb-1"></div></div>
+<div class="orb-wrapper orb-2-wrapper" data-speed="0.035"><div class="gradient-orb orb-2"></div></div>
+<div class="orb-wrapper orb-3-wrapper" data-speed="0.05"><div class="gradient-orb orb-3"></div></div>
+<div id="gradient-shift"></div>
+
+<canvas id="particles"></canvas>
+
+<nav id="nav">
+<div class="logo">kubekiwoda</div>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button class="hamburger" id="hamburger" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
+<div class="mobile-nav" id="mobileNav">
+<a href="#about" class="mobile-link">About</a>
+<a href="#work" class="mobile-link">Work</a>
+<a href="#skills" class="mobile-link">Skills</a>
+<a href="#contact" class="mobile-link">Contact</a>
+</div>
+</nav>
+
+<section class="hero section-enter active" id="hero">
+<div class="hero-badge">Roblox Scripter & GUI Designer</div>
+<h1>
+<span class="gradient">Scripting</span><br>
+<span id="hero-text">Roblox Experiences</span>
+</h1>
+<p>Building Roblox games with Luau scripting and custom GUI design. Web development? Just a fun side project - AI's got that covered anyway.</p>
+<div class="scroll-indicator">
+<span>Scroll to explore</span>
+<div class="scroll-line"></div>
+</div>
+</section>
+
+<section id="about" class="section-enter">
+<div class="about-content">
+<div class="about-text">
+<span class="section-label">About Me</span>
+<h2>Roblox specialist,<br>web dev hobbyist.</h2>
+<p>I'm kubekiwoda, a Roblox scripter and GUI designer. I build immersive Roblox experiences with clean Luau code and pixel-perfect interfaces. Web dev is just something I do for fun - AI is replacing that anyway.</p>
+</div>
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-number" data-count="6">0</div>
+<div class="stat-label">Projects Shipped</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="4">0</div>
+<div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="86">0</div>
+<div class="stat-label">Lighthouse Score</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="562">0</div>
+<div class="stat-label">Coffee Consumed</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="work" class="section-enter">
+<div class="projects">
+<span class="section-label">Selected Work</span>
+<h2 class="section-title">Recent projects<br>that define me.</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-number">01</div>
+<h3><a href="https://www.roblox.com/games/122914802866065/Octos-Place" target="_blank">[REMAKE] Octo's Place</a></h3>
+<p>Personal Roblox place remake with custom Luau scripting and modern-gradient GUI design.</p>
+<div class="project-tags">
+<span class="tag">Luau</span>
+<span class="tag">Funny</span>
+<span class="tag">GUI</span>
+</div>
+</div>
+<div class="project-card">
+<div class="project-number">02</div>
+<h3><a href="https://www.roblox.com/games/121519551601194/Escape-Tsunami-for-Platypus" target="_blank">Escape Tsunami For Platypus</a></h3>
+<p>Commissioned escape game for politoperz with custom known game mechanics and stud-styled UI.</p>
+<div class="project-tags">
+<span class="tag">Luau</span>
+<span class="tag">Game Design</span>
+<span class="tag">Commission</span>
+</div>
+</div>
+<div class="project-card">
+<div class="project-number">03</div>
+<h3><a href="https://www.roblox.com/games/73093850486377/Platypus-Outfits" target="_blank">Platypus Outfits</a></h3>
+<p>Outfit shop with custom functionality.</p>
+<div class="project-tags">
+<span class="tag">Luau</span>
+<span class="tag">GUI</span>
+<span class="tag">Systems</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills" class="section-enter">
+<div class="skills">
+<span class="section-label">Expertise</span>
+<h2 class="section-title">Skills that<br>power the craft.</h2>
+<div class="skills-grid">
+<div class="skill-item">
+<div class="skill-circle">
+<svg viewBox="0 0 120 120">
+<defs>
+<linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#00A2FF"/>
+<stop offset="100%" style="stop-color:#FFC000"/>
+</linearGradient>
+</defs>
+<circle cx="60" cy="60" r="50"/>
+<circle cx="60" cy="60" r="50" class="progress" data-progress="95"/>
+</svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-name">Luau Scripting</div>
+</div>
+<div class="skill-item">
+<div class="skill-circle">
+<svg viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="50"/>
+<circle cx="60" cy="60" r="50" class="progress" data-progress="90"/>
+</svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-name">GUI Design</div>
+</div>
+<div class="skill-item">
+<div class="skill-circle">
+<svg viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="50"/>
+<circle cx="60" cy="60" r="50" class="progress" data-progress="82"/>
+</svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-name">Game Design</div>
+</div>
+<div class="skill-item">
+<div class="skill-circle">
+<svg viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="50"/>
+<circle cx="60" cy="60" r="50" class="progress" data-progress="70"/>
+</svg>
+<div class="percent">0%</div>
+</div>
+<div class="skill-name">Web Dev (Hobby)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section-enter">
+<div class="contact">
+<span class="section-label">Get In Touch</span>
+<h2>Let's build<br>something epic.</h2>
+<p>Want to commission a Roblox game or GUI? Reach out via my Roblox profile or studio group.</p>
+<div class="contact-links">
+<a href="https://www.roblox.com/users/590387954/profile" class="contact-link" target="_blank">
+<span>Roblox Profile</span>
+</a>
+<a href="https://www.roblox.com/communities/418190920/Kubeks-Studio" class="contact-link" target="_blank">
+<span>Kubek's Studio</span>
+</a>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 kubekiwoda. Roblox Portfolio.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
